@@ -4,47 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <div>
-        Poem here
-        <br />
-        poem here
-        <br />
-        poem here
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            class="instructions"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          Poem here
+          <br />
+          poem here
+          <br />
+          poem here
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/bowershaley" target="_blank"> Haley Bowers</a>
-      and is
-      <a
-        href="https://github.com/bowershaley/HB-Poem-Generator"
-        target="_blank"
-      >
-        open-sourced on GitHub
-      </a>
-      and is
-      <a href="https://hb-poem-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/bowershaley" target="_blank">
+          Haley Bowers</a
+        >
+        and is
+        <a
+          href="https://github.com/bowershaley/HB-Poem-Generator"
+          target="_blank"
+        >
+          open-sourced on GitHub
+        </a>
+        and is
+        <a href="https://hb-poem-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
