@@ -19,14 +19,23 @@ h1 {
   color: #05386b;
   text-align: center;
 }
+.form-container {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #edf5e1;
+  box-shadow: 10px 7px 16px -3px rgba(0, 0, 0, 0.2);
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
+  padding: 5px;
+}
 
 form {
-  padding: 30px;
-  background-color: #edf5e1;
-  border-radius: 5px;
   display: flex;
-  box-shadow: 10px 7px 16px -3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
 }
 
 .instructions {
@@ -60,6 +69,10 @@ form {
   box-shadow: 10px 7px 16px -3px rgba(0, 0, 0, 0.2);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
@@ -68,4 +81,17 @@ footer {
 
 a {
   color: #05386b;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#blinking-text {
+  animation: blink 1s linear infinite;
 }
